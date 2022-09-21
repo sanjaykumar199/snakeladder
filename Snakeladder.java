@@ -7,6 +7,8 @@ public class Snakeladder {
         System.out.println();
         int SinglePlayer = 0;
         System.out.println("statring position of single player " + SinglePlayer);
+
+        while (SinglePlayer != 100) {
             int SinglePlayerRolls = rd.nextInt(6) + 1;
             int a = rd.nextInt(3);
             System.out.println();
@@ -27,3 +29,4 @@ public class Snakeladder {
             }
         }
     }
+}

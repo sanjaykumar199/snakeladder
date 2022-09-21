@@ -24,9 +24,20 @@ public class Snakeladder {
             }
             if (a == 2) {
                 SinglePlayer -= SinglePlayerRolls;
-                System.out.println("Snake bytes & player move behind by number of position:" + "-" + SinglePlayerRolls);
+                if(SinglePlayer<=0) {
+                    SinglePlayer = 0;
+                    System.out.println("Snake bytes & player move behind by number of position:" + "-" + SinglePlayerRolls);
+                }
+                else
                 System.out.println("Player current position: " + SinglePlayer);
             }
+            if(SinglePlayer>100){
+                SinglePlayer -= SinglePlayerRolls;
+                System.out.println();
+                System.out.println(SinglePlayer);
+            }
         }
+        System.out.println();
+        System.out.println("Player reach position: "+SinglePlayer);
     }
 }
